@@ -3,10 +3,11 @@ import Image from "next/image";
 
 export default function HotelBlock({id, name, capacity}){
   const imageLoader = ({src}) => {
-    return `./hotels/${src}.jpeg`
+    return `./hotels/${src}.jpeg`;
   }
   return(
     <div>
+      <div>{id}</div>
       <h2>{name}</h2>
       <p>{capacity}</p>
       <Image 
